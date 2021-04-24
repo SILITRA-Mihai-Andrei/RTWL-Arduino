@@ -29,7 +29,7 @@
 #define STATE_AIR_SENSOR_INVALID_DATA 'a'
 #define STATE_GET_GPS_COORDINATES_ENABLED 'L'
 #define STATE_GET_GPS_COORDINATES_DISABLED 'l'
-
+  
 /*
   COMMANDS
   All command must be UPPERCASE letters
@@ -65,6 +65,8 @@
 #define LIMIT_MAX_HUMIDITY 100
 #define LIMIT_MIN_AIR 3
 #define LIMIT_MAX_AIR 100
+#define LIMIT_MIN_WIND 50
+#define LIMIT_MAX_WIND 1024
 
 /* Timing */
 #define ONE_SECOND 1000
@@ -74,7 +76,7 @@
 /* Counters */
 #define NUMBER_OF_READINGS_STARTUP 5
 /* If the sensors or modules failed at least X times -> not working */
-#define FAILURES_GPS 250
+#define FAILURES_GPS 15
 #define FAILURES_AIR_QUALITY 2
 
 /* Memory size */
